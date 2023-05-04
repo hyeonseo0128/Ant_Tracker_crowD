@@ -1,0 +1,28 @@
+{
+  "name": "motor_message_sender",
+  "version": "1.0.0",
+  "description": "Antenna Tracker",
+  "main": "gcs_tracker.js",
+  "dependencies": {
+    "mqtt": "^4.3.6",
+    "nanoid": "^3.2.0"
+  },
+  "scripts": {
+    "start": "pm2 start motor_message_sender.js --name Motor_MSG_Sender && pm2 save"
+  },
+  "author": "Hyeonseo Son",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeonseo0128/Ant_Tracker_crowD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hyeonseo0128/Ant_Tracker_crowD/issues"
+  },
+  "homepage": "https://github.com/hyeonseo0128/Ant_Tracker_crowD#readme",
+  "keywords": [
+    "antenna",
+    "tracker",
+    "gps"
+  ]
+}
