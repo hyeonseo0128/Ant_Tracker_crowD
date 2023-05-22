@@ -331,7 +331,7 @@ function runMotor() {
             }
 
             try {
-                localmqtt.publish(pub_motor_position_topic, (p_out * 180 / Math.PI).toString(), () => {
+                localmqtt.publish(pub_motor_position_topic, myPitch.toString(), () => {
                     // console.log('send Motor angle to GCS value: ', p_out * 180 / Math.PI)
                 });
             } catch {
